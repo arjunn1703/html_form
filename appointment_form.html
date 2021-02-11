@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Appointment Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="app-wrapper">
+        <div>
+          <h1>Fix your Doctor Appointment</h1>
+        </div>
+        <form>
+          <div class="section_one">
+            <div><h4>First Name</h4></div>
+            <div>
+              <input
+                type="text"
+                name="firstname"
+                placeholder="Enter your first name"
+                required
+              />
+            </div>
+            <div><h4>Last Name</h4></div>
+            <div>
+              <input
+                type="text"
+                name="lastname"
+                placeholder="Enter your last name"
+                required
+              />
+            </div>
+          </div>
+          <div class="section_two">
+            <div>
+              <h4>Date & Time</h4>
+            </div>
+            <div>
+              <input
+                type="datetime-local"
+                name="date"
+                placeholder="Fix your date"
+                required
+              />
+            </div>
+            <div>
+              <h4>Your Doctor</h4>
+            </div>
+            <div>
+              <select name="doctor" required>
+                <option value="">Select your doctor</option>
+                <option value="D01">Dr. John</option>
+                <option value="D02">Dr. Manjula</option>
+                <option value="D03">Dr. Ram</option>
+                <option value="D04">Dr. Abdul</option>
+                <option value="D05">Dr. Warsey</option>
+              </select>
+            </div>
+          </div>
+          <div class="section_three">
+            <div>
+              <input type="submit" method="post" class="btn" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
